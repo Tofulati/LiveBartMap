@@ -64,3 +64,8 @@ h4 {
     color: black;
   background-color: yellow;
 }
+
+h2 {
+    font-family: Arial;
+    font-size: bold;
+}

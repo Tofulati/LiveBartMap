@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel='stylesheet' href='https://unpkg.com/maplibre-gl@3.3.1/dist/maplibre-gl.css' />
+    <script src='https://unpkg.com/maplibre-gl@3.3.1/dist/maplibre-gl.js'></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Live Bart Map</title>
+</head>
+<body>
+    <div class="navbar">
+        <h1>Live Bart Map</h1>
+    </div>
+    <div class="interact">  
+        <div class="map_container" id="map">
+            <script>
+                var map = new maplibregl.Map({
+                container: 'map', // container id
+                style: 'https://api.maptiler.com/maps/hybrid/style.json?key=get_your_own_OpIi9ZULNHzrESv6T2vL', // style URL
+                center: [-122.2, 37.8], // starting position [lng, lat]
+                zoom: 8.5,
+                interactive: false
+                });
+            </script>
+        </div>
+        <div class="sidebar_container">
+            <button id="Red">
+                Red Line
+            </button>
+            <h4 id="rDetail">
+                Details:
+                <br>
+                Times:
+            </h4>
+            <button id="Green">
+                Green Line
+            </button>
+            <h4 id="gDetail">
+                Details:
+                <br>
+                Times:
+            </h4>
+            <button id="Blue">
+                Blue Line
+            </button>
+            <h4 id="bDetail">
+                Details:
+                <br>
+                Times:
+            </h4>
+            <button id="Yellow">
+                Yellow Line
+            </button>
+            <h4 id="yDetail">
+                Details:
+                <br>
+                Times:
+            </h4>
+        </div>
+    </div>
+</body>
+</html>

@@ -13,7 +13,7 @@
     <script type="text/javascript" src="blue.js"></script>
     <script type="text/javascript" src="green.js"></script>
     <script type="text/javascript" src="orange.js"></script>
-
+    
     <title>Live Bart Map</title>
 </head>
 <body>
@@ -32,26 +32,31 @@
             </script>
         </div>
         <div class="sidebar_container">
-            <input id="redButton" type="button" value="Red Line" onclick="redMap();"/>
-            <h4 id="rDetail">
-                
-            </h4>
-            <input id="greenButton" type="button" value="Green Line" onclick="greenMap();"/>
-            <h4 id="gDetail">
-                
-            </h4>
-            <input id="blueButton" type="button" value="Blue Line" onclick="blueMap();"/>
-            <h4 id="bDetail">
-                
-            </h4>
-            <input id="yellowButton" type="button" value="Yellow Line" onclick="yellowMap();"/>
-            <h4 id="yDetail">
-                
-            </h4>
-            <input id="orangeButton" type="button" value="Orange Line" onclick="orangeMap();"/>
-            <h4 id="oDetail">
-                
-            </h4>
+            <input id="redButton" type="button" value="Red Line" onclick="redMap(); showR();"/>
+            <div id="rDetail" style="display: none;">
+                asdfasdf
+            </div>
+            <br>
+            <input id="greenButton" type="button" value="Green Line" onclick="greenMap(); showG();"/>
+            <div id="gDetail" style="display: none;">
+                asdfasdf
+            </div>
+            <br>
+            <input id="blueButton" type="button" value="Blue Line" onclick="blueMap(); showB();"/>
+            <div id="bDetail" style="display: none;">
+                asdfasdf
+            </div>
+            <br>
+            <input id="yellowButton" type="button" value="Yellow Line" onclick="yellowMap(); showY();"/>
+            <div id="yDetail" style="display: none;">
+                asdfasdf
+            </div>
+            <br>
+            <input id="orangeButton" type="button" value="Orange Line" onclick="orangeMap(); showO();"/>
+            <div id="oDetail" style="display: none;">
+                asdfasdf
+            </div>
+            <br>
             <h2>Station Near You</h2>
         </div>
     </div>

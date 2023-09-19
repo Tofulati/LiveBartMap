@@ -8,6 +8,16 @@ if (re.addEventListener)
 else if (re.attachEvent)
     re.attachEvent('onclick', orangeMap)
 
+// Show Details
+function showO() {
+    var text = document.getElementById("oDetail");
+    text.style.display = "block";
+    document.getElementById("gDetail").style.display = "none";
+    document.getElementById("bDetail").style.display = "none";
+    document.getElementById("rDetail").style.display = "none";
+    document.getElementById("yDetail").style.display = "none";
+}
+
 function orangeMap() {
     var map = new maplibregl.Map({
         container: 'map', // container id

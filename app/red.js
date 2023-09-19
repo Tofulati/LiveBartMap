@@ -8,6 +8,16 @@ if (re.addEventListener)
 else if (re.attachEvent)
     re.attachEvent('onclick', redMap)
 
+// Show Details
+function showR() {
+    var text = document.getElementById("rDetail");
+    text.style.display = "block";
+    document.getElementById("gDetail").style.display = "none";
+    document.getElementById("oDetail").style.display = "none";
+    document.getElementById("bDetail").style.display = "none";
+    document.getElementById("yDetail").style.display = "none";
+}
+
 function redMap() {
     var map = new maplibregl.Map({
         container: 'map', // container id

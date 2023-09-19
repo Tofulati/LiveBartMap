@@ -1,12 +1,21 @@
 // YELLOW
 document.getElementById("yellowButton").onclick = yellowMap();
-// document.getElementById("yellowButton").onclick = function() { alert('Hello!')};
 
 var re = document.getElementById("yellowButton");
 if (re.addEventListener)
     re.addEventListener("click", yellowMap, false);
 else if (re.attachEvent)
-    re.attachEvent('onclick', yellowMap)
+    re.attachEvent('onclick', yellowMap);
+
+// Show Details
+function showY() {
+    var text = document.getElementById("yDetail");
+    text.style.display = "block";
+    document.getElementById("gDetail").style.display = "none";
+    document.getElementById("oDetail").style.display = "none";
+    document.getElementById("rDetail").style.display = "none";
+    document.getElementById("bDetail").style.display = "none";
+}
 
 function yellowMap() {
     var map = new maplibregl.Map({

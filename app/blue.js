@@ -8,6 +8,15 @@ if (re.addEventListener)
 else if (re.attachEvent)
     re.attachEvent('onclick', blueMap)
 
+// Show Details
+function showB() {
+    var text = document.getElementById("bDetail");
+    text.style.display = "block";
+    document.getElementById("gDetail").style.display = "none";
+    document.getElementById("oDetail").style.display = "none";
+    document.getElementById("rDetail").style.display = "none";
+    document.getElementById("yDetail").style.display = "none";
+}
 
 // Load Map
 function blueMap() {

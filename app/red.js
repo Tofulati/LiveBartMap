@@ -21,7 +21,7 @@ function showR() {
 function redMap() {
     var map = new maplibregl.Map({
         container: 'map', // container id
-        style: 'https://api.maptiler.com/maps/hybrid/style.json?key=get_your_own_OpIi9ZULNHzrESv6T2vL', // style URL
+        style: 'https://api.maptiler.com/maps/hybrid/style.json?key=gafsgdxY5sUShTw4NmEL', // style URL
         center: [-122.2, 37.7], // starting position [lng, lat]
         zoom: 9.3
     });

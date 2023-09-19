@@ -265,7 +265,7 @@ function greenMap() {
     };
 
     map.on('load', () => {
-        map.addSource('route', {
+        map.addSource('green', {
             'type': 'geojson',
             'data': {
                 'type': 'Feature',
@@ -300,9 +300,9 @@ function greenMap() {
             }
         });
         map.addLayer({
-            'id': 'route',
+            'id': 'green-line',
             'type': 'line',
-            'source': 'route',
+            'source': 'green',
             'layout': {
                 'line-join': 'round',
                 'line-cap': 'round'

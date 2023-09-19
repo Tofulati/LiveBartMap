@@ -223,7 +223,7 @@ function blueMap() {
     };
 
     map.on('load', () => {
-        map.addSource('route', {
+        map.addSource('blue', {
             'type': 'geojson',
             'data': {
                 'type': 'Feature',
@@ -254,9 +254,9 @@ function blueMap() {
             }
         });
         map.addLayer({
-            'id': 'route',
+            'id': 'blue-line',
             'type': 'line',
-            'source': 'route',
+            'source': 'blue',
             'layout': {
                 'line-join': 'round',
                 'line-cap': 'round'

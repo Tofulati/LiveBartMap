@@ -265,7 +265,7 @@ function orangeMap() {
     };
 
     map.on('load', () => {
-        map.addSource('route', {
+        map.addSource('orange', {
             'type': 'geojson',
             'data': {
                 'type': 'Feature',
@@ -299,9 +299,9 @@ function orangeMap() {
             }
         });
         map.addLayer({
-            'id': 'route',
+            'id': 'orange-line',
             'type': 'line',
-            'source': 'route',
+            'source': 'orange',
             'layout': {
                 'line-join': 'round',
                 'line-cap': 'round'

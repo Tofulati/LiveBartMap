@@ -287,7 +287,7 @@ function redMap() {
     };
 
     map.on('load', () => {
-        map.addSource('route', {
+        map.addSource('red', {
             'type': 'geojson',
             'data': {
                 'type': 'Feature',
@@ -323,9 +323,9 @@ function redMap() {
             }
         });
         map.addLayer({
-            'id': 'route',
+            'id': 'red-line',
             'type': 'line',
-            'source': 'route',
+            'source': 'red',
             'layout': {
                 'line-join': 'round',
                 'line-cap': 'round'

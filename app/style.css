@@ -97,3 +97,8 @@ h2 {
     font-family: Arial;
     font-size: bold;
 }
+
+#resetButton {
+    position: relative;
+    margin-top: 100%;
+}

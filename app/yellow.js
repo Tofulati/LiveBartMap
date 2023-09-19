@@ -319,7 +319,7 @@ function yellowMap() {
     };
 
     map.on('load', () => {
-        map.addSource('route', {
+        map.addSource('yellow', {
             'type': 'geojson',
             'data': {
                 'type': 'Feature',
@@ -360,9 +360,9 @@ function yellowMap() {
             }
         });
         map.addLayer({
-            'id': 'route',
+            'id': 'yellow-line',
             'type': 'line',
-            'source': 'route',
+            'source': 'yellow',
             'layout': {
                 'line-join': 'round',
                 'line-cap': 'round'

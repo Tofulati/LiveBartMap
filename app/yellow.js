@@ -16,6 +16,299 @@ function yellowMap() {
         zoom: 9.3
     });
 
+    // Bart Stations
+    const geojson = {
+        'type': 'FeatureCollection',
+        'features': [
+            {
+                'type': 'Feature',
+                'properties': {
+                    'message': 'Balboa Park',
+                    'iconSize': [40, 40]
+                },
+                'geometry': {
+                    'type': 'Point',
+                    'coordinates': [-122.447414,37.721981]
+                }
+            },
+            {
+                'type': 'Feature',
+                'properties': {
+                    'message': 'Glen Park',
+                    'iconSize': [40, 40]
+                },
+                'geometry': {
+                    'type': 'Point',
+                    'coordinates': [-122.434092,37.732921]
+                }
+            },
+            {
+                'type': 'Feature',
+                'properties': {
+                    'message': '24th St Mission',
+                    'iconSize': [40, 40]
+                },
+                'geometry': {
+                    'type': 'Point',
+                    'coordinates': [-122.418466,37.752254]
+                }
+            },
+            {
+                'type': 'Feature',
+                'properties': {
+                    'message': '16th St Mission',
+                    'iconSize': [40, 40]
+                },
+                'geometry': {
+                    'type': 'Point',
+                    'coordinates': [-122.419694,37.765062]
+                }
+            },
+            {
+                'type': 'Feature',
+                'properties': {
+                    'message': 'Civic Center',
+                    'iconSize': [40, 40]
+                },
+                'geometry': {
+                    'type': 'Point',
+                    'coordinates': [-122.413756,37.779528]
+                }
+            },
+            {
+                'type': 'Feature',
+                'properties': {
+                    'message': 'Powell St',
+                    'iconSize': [40, 40]
+                },
+                'geometry': {
+                    'type': 'Point',
+                    'coordinates': [-122.406857,37.784991]
+                }
+            },
+            {
+                'type': 'Feature',
+                'properties': {
+                    'message': 'Montgomery St',
+                    'iconSize': [40, 40]
+                },
+                'geometry': {
+                    'type': 'Point',
+                    'coordinates': [-122.401407,37.789256]
+                }
+            },
+            {
+                'type': 'Feature',
+                'properties': {
+                    'message': 'Embarcadero',
+                    'iconSize': [40, 40]
+                },
+                'geometry': {
+                    'type': 'Point',
+                    'coordinates': [-122.396742,37.792976]
+                }
+            },
+            {
+                'type': 'Feature',
+                'properties': {
+                    'message': 'West Oakland',
+                    'iconSize': [40, 40]
+                },
+                'geometry': {
+                    'type': 'Point',
+                    'coordinates': [-122.294582,37.804675]
+                }
+            },
+            {
+                'type': 'Feature',
+                'properties': {
+                    'message': 'Daly City',
+                    'iconSize': [40, 40]
+                },
+                'geometry': {
+                    'type': 'Point',
+                    'coordinates': [-122.469081,37.706121]
+                }
+            },
+            {
+                'type': 'Feature',
+                'properties': {
+                    'message': 'Colma',
+                    'iconSize': [40, 40]
+                },
+                'geometry': {
+                    'type': 'Point',
+                    'coordinates': [-122.466233,37.684638]
+                }
+            },
+            {
+                'type': 'Feature',
+                'properties': {
+                    'message': 'South San Francisco',
+                    'iconSize': [40, 40]
+                },
+                'geometry': {
+                    'type': 'Point',
+                    'coordinates': [-122.444116,37.664174]
+                }
+            },
+            {
+                'type': 'Feature',
+                'properties': {
+                    'message': 'San Bruno',
+                    'iconSize': [40, 40]
+                },
+                'geometry': {
+                    'type': 'Point',
+                    'coordinates': [-122.416038,37.637753]
+                }
+            },
+            {
+                'type': 'Feature',
+                'properties': {
+                    'message': 'SFO',
+                    'iconSize': [40, 40]
+                },
+                'geometry': {
+                    'type': 'Point',
+                    'coordinates': [-122.392612,37.616035]
+                }
+            },
+            {
+                'type': 'Feature',
+                'properties': {
+                    'message': 'Oakland City Center',
+                    'iconSize': [40, 40]
+                },
+                'geometry': {
+                    'type': 'Point',
+                    'coordinates': [-122.271604,37.803664]
+                }
+            },
+            {
+                'type': 'Feature',
+                'properties': {
+                    'message': 'Oakland',
+                    'iconSize': [40, 40]
+                },
+                'geometry': {
+                    'type': 'Point',
+                    'coordinates': [-122.269029,37.80787]
+                }
+            },
+            {
+                'type': 'Feature',
+                'properties': {
+                    'message': 'MacArthur',
+                    'iconSize': [40, 40]
+                },
+                'geometry': {
+                    'type': 'Point',
+                    'coordinates': [-122.267227,37.828415]
+                }
+            },
+            {
+                'type': 'Feature',
+                'properties': {
+                    'message': 'Rockridge',
+                    'iconSize': [40, 40]
+                },
+                'geometry': {
+                    'type': 'Point',
+                    'coordinates': [-122.251793,37.844601]
+                }
+            },
+            {
+                'type': 'Feature',
+                'properties': {
+                    'message': 'Orinda',
+                    'iconSize': [40, 40]
+                },
+                'geometry': {
+                    'type': 'Point',
+                    'coordinates': [-122.183791,37.878361]
+                }
+            },
+            {
+                'type': 'Feature',
+                'properties': {
+                    'message': 'Lafayette',
+                    'iconSize': [40, 40]
+                },
+                'geometry': {
+                    'type': 'Point',
+                    'coordinates': [-122.123801,37.893394]
+                }
+            },
+            {
+                'type': 'Feature',
+                'properties': {
+                    'message': 'Walnut Creek',
+                    'iconSize': [40, 40]
+                },
+                'geometry': {
+                    'type': 'Point',
+                    'coordinates': [-122.056013,37.928403]
+                }
+            },
+            {
+                'type': 'Feature',
+                'properties': {
+                    'message': 'Pleasant Hill',
+                    'iconSize': [40, 40]
+                },
+                'geometry': {
+                    'type': 'Point',
+                    'coordinates': [-122.056013,37.928403]
+                }
+            },
+            {
+                'type': 'Feature',
+                'properties': {
+                    'message': 'Martinez',
+                    'iconSize': [40, 40]
+                },
+                'geometry': {
+                    'type': 'Point',
+                    'coordinates': [-122.024597,38.003275]
+                }
+            },
+            {
+                'type': 'Feature',
+                'properties': {
+                    'message': 'Pittsburg',
+                    'iconSize': [40, 40]
+                },
+                'geometry': {
+                    'type': 'Point',
+                    'coordinates': [-121.945154,38.018914]
+                }
+            },
+            {
+                'type': 'Feature',
+                'properties': {
+                    'message': 'Pittsburg Center',
+                    'iconSize': [40, 40]
+                },
+                'geometry': {
+                    'type': 'Point',
+                    'coordinates': [-121.889062,38.016847]
+                }
+            },
+            {
+                'type': 'Feature',
+                'properties': {
+                    'message': 'Antioch',
+                    'iconSize': [40, 40]
+                },
+                'geometry': {
+                    'type': 'Point',
+                    'coordinates': [-121.8162,38.0178]
+                }
+            }
+        ]
+    };
+
     map.on('load', () => {
         map.addSource('route', {
             'type': 'geojson',
@@ -25,6 +318,8 @@ function yellowMap() {
                 'geometry': {
                     'type': 'LineString',
                     'coordinates': [
+                        [-121.8162,38.0178],
+                        [-121.889062,38.016847],
                         [-121.945154,38.018914],
                         [-122.024597,38.003275],
                         [-122.029095,37.973737],
@@ -68,5 +363,18 @@ function yellowMap() {
                 'line-width': 3
             }
         });
+    });
+
+    geojson.features.forEach((marker) => { 
+
+        const popup = new maplibregl.Popup({closeOnClick: true}).setText(
+            marker.properties.message
+        );
+
+        // add marker to map
+        new maplibregl.Marker()
+            .setLngLat(marker.geometry.coordinates)
+            .setPopup(popup)
+            .addTo(map);
     });
 }
